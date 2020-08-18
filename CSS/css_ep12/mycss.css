@@ -1,0 +1,26 @@
+#position1{
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    position: absolute;
+    left: 100px;
+    z-index: 2; /*决定覆盖顺序，谁的值大谁在前面*/ 
+}
+#position2{
+    width: 100px;
+    height: 100px;
+    background-color:blue;
+    position: relative;
+    left: 100px;
+    top: -20px;
+    z-index: 3;
+}
+#position3{
+    width: 100px;
+    height: 100px;
+    background-color:gold;
+    position: relative;
+    left: 100px;
+    top: -20px;
+    z-index: 10;
+}

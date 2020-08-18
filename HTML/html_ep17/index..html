@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <title>全局属性</title>
+    </head>
+    <body>
+        <h2>可编辑列表</h2>
+        <ul>
+            <li>列表1</li>
+            <li>列表2</li>
+            <li>列表3</li>
+        </ul>
+        <ul hidden>
+            <li>列表1</li>
+            <li>列表2</li>
+            <li>列表3</li>
+        </ul>
+        <input type="text" spellcheck="">
+        <a href="#" tabindex="2">hello</a>
+        <a href="#" tabindex="-1">hello</a>
+        <a href="#" tabindex="3">hello</a>
+        <ul tabindex="4">
+            <li tabindex="5">1</li>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+        </ul>
+
+    </body>
+</html>
+
+
+<!--
+    contentEditable属性 
+        值为true时为可编辑 flase为不可编辑啊
+    designMode属性
+        整个页面是否可编辑
+    hidden属性
+        通知浏览器不渲染该元素 布尔值 true为不可见
+    spellcheck属性
+        对用户输入进行语法检查
+    tabindex属性
+        对所有元素进行遍历,控制table键的选择顺序,若标签tabindex的值为-1则无法通过table键获得焦点
+-->

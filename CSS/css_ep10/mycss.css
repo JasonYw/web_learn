@@ -1,0 +1,22 @@
+#tb,tr,th,td{
+    border: 1px solid blue;
+    background-color: blueviolet;
+}
+#tb{
+    border-collapse: collapse;
+    width: 500px;
+    text-align: center;
+    height: 400px;
+}
+#tb td，#tb th{
+    border: 1px solid aqua;
+    padding: 5px;
+}
+#tb th{
+    text-align: right;
+    border: aqua;
+    color: beige;
+}
+#tb tr.alt td{
+    background-color:brown;
+}

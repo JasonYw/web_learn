@@ -1,0 +1,42 @@
+div{
+    background-color: lightblue;
+    width: fit-content;
+    height: fit-content;
+}
+.div2{
+    transform: translate(100px,100px);
+    -webkit-transform: translate(200px,200px); /*支持chrome 与 safari*/
+    -ms-transform: translate(200px,100px); /*支持ie */
+    -o-transform: translate(200px,200px); /*支持opera*/
+    -moz-transform: translate(200px,100px); /*支持火狐*/
+
+}
+.div3{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg); /*支持chrome 与 safari*/
+    -ms-transform: rotate(180deg);/*支持ie */
+    -o-transform: rotate(180deg);/*支持opera*/
+    -moz-transform: rotate(180deg); /*支持火狐*/
+}
+.div4{
+    margin-top: 20px;
+    transform: scale(1,2);
+    -webkit-transform: scale(1,2); /*支持chrome 与 safari*/
+    -ms-transform: scale(1,2);/*支持ie */
+    -o-transform: scale(1,2);/*支持opera*/
+    -moz-transform: scale(1,2); /*支持火狐*/
+}
+.div5{
+    margin-top: 50px;
+    transform: skew(20deg,20deg);
+    -webkit-transform:skew(20deg,20deg); /*支持chrome 与 safari*/
+    -ms-transform:skew(50deg,50deg);/*支持ie */
+    -o-transform: skew(50deg,50deg);/*支持opera*/
+    -moz-transform:skew(50deg,50deg); /*支持火狐*/
+}
+.div6{
+    transform: rotateX(120deg);
+    transform: rotateY(120deg);
+    -webkit-transform: rotateX(120deg);
+    -webkit-transform: rotateY(120deg);
+}

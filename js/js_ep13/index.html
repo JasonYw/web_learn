@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="utf-8">
+    <title>js 对象</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <script>
+        var a=["hello","world"]
+        var b=["iwen","ime"]
+        var c=a.concat(b)
+        document.getElementById("p1").innerHTML=c
+        var a_0=["a","c","x","b"]
+        var a_1=["a","c","x","b"]
+        a_1_0 =a_0.sort(function(a,b){
+            return a-b
+        }) //升序排列
+        a_1_1 =a_1.sort(function(a,b){
+            return b-a
+        }) //倒序排列
+        document.getElementById("p2").innerHTML=a_0.sort()
+        document.getElementById("p3").innerHTML=a_1_0+":"+a_1_1
+        var d=["a","b"]
+        document.write(d.push("c")) //这样会输出长度
+        document.write("<br/>"+d+"<br>") //这样会输出d的内容
+        var e=["v","b","a"]
+        document.write(a.reverse())
+    </script>
+</body>
+</html>
+<!--   
+    Array对象：
+        使用单独的变量名来存储一系列的值
+    数组的创建：
+        例 var myArray=["hello","iwen","ime"]
+    数组的访问：
+        通过指定数组名以及索引号码，你可以访问某个特定的元素
+    数组的常用方法：
+        concat(): 合并数组
+        sort():排序
+        push()：末尾追加元素
+        reverse()：数组元素翻转
+    
+-->

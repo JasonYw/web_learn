@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="utf-8">
+    <title>js DOM对象控制HTML</title>
+</head>
+<body>
+    <p name="pn">HELLO</p>
+    <p name="pn">HELLO</p>
+    <p name="pn">HELLO</p>
+    <p name="pn">HELLO</p>
+    <p name="pn">HELLO</p>
+    <a id="aid" title="get_a">hello</a>
+    <a id="aid2">aid2</a>
+    <ul><li>1</li><li>2</li><li>3</li></ul>
+    <div id="div">
+        <p id="pid">
+            div_p
+        </p>
+    </div>
+    <script>
+        function getname(){
+            var count =document.getElementsByName("pn") //当网页中存在多个name时，通过集合存储起来，同时调用，可通过下标方式取出固定的
+            //alert(count.length)
+            var p =count[0]
+            p.innerHTML ="world" //只修改第一个pn元素
+            var count_tag =document.getElementsByTagName("p")//当网页中存在多个tag时，通过集合存储起来，同时调用，可通过下标方式取出固定的
+            //alert(count_tag.length) 
+        }
+        function attr(){
+            var anode =document.getElementById("aid")
+            var attr =anode.getAttribute("id") //获取id为aid的标签的id的属性
+            alert(attr)
+        }
+        function setAttr(){
+            var anode =document.getElementById("aid2")
+            anode.setAttribute("title","setting fininshing")
+            var attr =anode.getAttribute("title")
+            alert(attr)
+        }
+        function getchildnode(){
+            var childnode =document.getElementsByTagName("ul")[0].childNodes
+            alert(childnode.length) //浏览器可能出现空白项，导致childNodes集合出现数量错误
+            alert(childnode[0].nodeType)
+        }
+        function getparrentnode(){
+            var div =document.getElementById("pid")
+            alert(div.parentNode.nodeName) //获取父节点，父节点有一个
+        }
+        function creatNode(){
+            var body =document.body
+            var input =document.createElement("input")
+            input.type ="button"
+            input.value ="按钮"
+            body.appendChild(input)
+        }
+        function addnode(){
+            var div =document.getElementById("div")
+            var node =document.getElementById("pid")
+            var newnode =document.createElement("p")
+            newnode.innerHTML="setting finishging"
+            div.insertBefore(newnode,node)
+        }
+        function removenode(){
+            var div =document.getElementById("div")
+            var p =div.removeChild(div.children[1])
+        }
+        function getsize(){
+            var width= document.body.offsetWidth || document.documentElement.offsetWidth
+            var height= document.documentElement.offsetHeight
+            alert(width+"*"+height)
+        }
+        getsize()
+        addnode()
+        removenode()
+        //creatNode()
+        //getparrentnode()
+        //getchildnode()
+        //setAttr()
+        //attr()
+        //getname()
+    </script>
+</body>
+</html>
+<!--   
+    DOM对象控制html
+    方法：
+    getElementsByName() 获取name
+    getElementsByTagName()  获取元素
+    getAttribute()  获取元素属性
+    setAttribute()  设置元素属性
+    childNodes()    访问子节点
+    parentNode()    访问父节点
+    createElement() 创建元素节点
+    createTextNode()    创建文本节点
+    insertBefore()  插入节点
+    removeChild()   删除节点
+    offsetHeight()  网页尺寸
+    scrollHeight 网页尺寸
+-->

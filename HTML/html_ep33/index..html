@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <title>pattern & SelectionDirection</title>
+    </head>
+    <body>
+        <script>
+            function AD() {  
+                var control =document.forms[1]['text'];
+                var direction =control.selectionDirection;
+                alert(direction)
+            }
+        </script>
+        <form action="url">
+            <input pattern="[A-Z]{3}" name="part">
+            <input type="submit">
+        </form>
+        <form>
+            <input type="test" name="text">
+            <input type="button" value="click me" onclick="AD()">
+        </form>
+    </body>
+</html>
+
+
+<!--
+    pattern属性值为正则表达式 判断input输入的格式是否符合要求，不符合要求不能提交
+
+    SelectionDirection 当用户正向选取文字时，属性值为forward 反向时值为backward 没有选取时 forward chrome不支持
+-->

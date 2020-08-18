@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <title>js function</title>
+    </head>
+    <body>
+        <script>
+            function demo1(){
+                var a=10
+                var b=10
+            }
+        </script>
+        <form>
+            <input type="button" value="按钮" onclick="demo1()">
+        </form>
+        <button onclick="demo1()">anjie</button>
+        <script>
+            function demo6(a,b){
+                return("hello"+a+b)
+            }
+            var val =demo6("1",2)+"world"
+            alert(val)
+        </script>
+        <p id="pid2"></p>
+        <p id="pid"></p>
+        <script>
+            function demo(a,b){
+                if(a>b){
+                    return "a"
+                }
+                else if(a==b){
+                    return "a=b"
+                }
+                else{
+                    return "b"
+                }
+            }
+            var a =demo(30,40)
+            document.getElementById("pid2").innerHTML=a
+            document.getElementById("pid").innerHTML=demo(10,20)
+        </script>
+        <script>
+            var n=10 //全局变量
+            m=10//全局变量
+            function demo1(){
+                var i =10; //局部变量
+                x =10 //全局变量
+            }
+            x与m的区别是 x只有在demo1这个函数调用后才是全局变量，否则不存在
+        </script>
+    </body>
+</html>
+<!-- 
+
+函数
+    函数是由事件驱动的或者当它被调用时执行的可重复使用的代码块
+    实现10组数字的和 
+function 函数名(){
+    函数体；（代码块）
+}
+js对大小写非常敏感，所以这里的function必须小写。在写函数调用时，也必须按照函数的相同名称来调用函数
+函数的调用
+带参数的函数
+    在函数的调用中，也可以传递值，这些值被称为参数
+    例 demo1(arg1,arg2)
+返回值
+    有时，我们需要将函数的值返回给调用他的地方
+    通过return语句就可以实现
+    注意：在使用return语句时，函数会停止执行，同时返回值
+局部变量 全局变量
+-->
+

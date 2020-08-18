@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <title>formmethod&formenctype</title>
+    </head>
+    <body>
+        <form id="testform">
+            <input type="submit" name="s1" value="v1" formmethod="post" formaction="url">
+            <input type="submit" name="s1" value="v1" formmethod="get" formaction="url">
+            <input type="text" formenctype="test/plain"> 
+            <input type="text" formenctype="application/x-www-form-urlencoded"> 
+        </form>
+    </body>
+</html>
+
+
+<!--
+    formmethod
+    对每一个表单元素分别指定不同的提交方法
+    formenctype
+    对表单元素分别指定不同的编码方式
+        值为test/plain时 空格变为+
+        multipart/form-data 不对字符进行编码
+        application/x-www-form-urlencoded 把表单数据转换为字符
+
+-->

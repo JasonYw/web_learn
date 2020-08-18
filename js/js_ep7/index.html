@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <title>js 事件</title>
+        <link rel="stylesheet" type="text/css" href="mystyle.css">
+    </head>
+    <body onload="demo_Load()">
+        <button onclick="demo_click()">button</button>
+       <div class="div" onmouseover="demo_Over(this)" onmouseout="demo_Out(this)"></div>
+       <!-- this指向当前函数 -->
+    </body>
+    <script>
+        function demo_click(){
+            alert("hello")
+        }
+        function demo_Over(ooj){
+            ooj.innerHTML ="hello"
+        }
+        function demo_Out(ooj){
+            ooj.innerHTML ="world"
+        }
+        function demo_Change(bg){
+            alert("hello change")
+        }
+        function demo_Selcet(bg){
+            bg.style.background="red"
+        }
+        function demo_On(bg){
+            bg.style.background ="blue"
+        }
+        function demo_Load(){
+            alert("loading")
+        }
+    </script>
+    <form>
+        <input type="text" onchange="demo_Change(this)">
+        <input type="text" onchange="alert('change')">
+        <input type="text" onselect="demo_Selcet(this)" onfocus="demo_On(this)">
+    </form>
+</html>
+<!-- 
+    onclick     单击事件
+    onmouseover 鼠标经过事件
+    onmouseout  鼠标移出事件
+    onchange    文本内容改变事件
+    onselect    文本框选中事件
+    onfocus     光标聚集事件
+    onblur      移开光标事件
+    onload      网页加载事件//内容加载完毕后弹出 
+    onunload    关闭网页事件
+-->
+

@@ -1,0 +1,28 @@
+boday{
+    margin: 0px;
+}
+#div3{
+    margin: 50px;
+}
+.bd{
+    border-style: double;
+}
+.pd{
+    padding: 10px;
+}
+.content{
+    background-color: cornsilk;
+}
+
+#div4{
+    margin: 100px;
+}
+.bd1{
+    border-style: double;
+}
+.pd1{
+    padding: 10px;
+}
+.content1{
+    background-color: cornsilk;
+}

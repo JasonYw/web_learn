@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="utf-8">
+    <title>js 对象</title>
+</head>
+<body onload="starttime()">
+    <script>
+        // var date =new Date()
+        // document.write(date)
+        // document.write(date.getFullYear())
+        // document.write(date.getTime())
+        // date.setFullYear(2010,1,1)
+        // document.write(date)
+        function starttime(){
+            var d =new Date()
+            var today_h =d.getHours()
+            var today_m =d.getMinutes()
+            var today_s =d.getSeconds()
+            today_m =checkTime(today_m)
+            today_s =checkTime(today_s)
+            document.getElementById("div1").innerHTML = today_h+":"+today_m+":"+today_s
+            t =setTimeout(function(){
+                starttime()
+            })
+        }
+        function checkTime(i){
+            if (i<10){
+                return i="0"+i
+            }else{
+                return i
+            }   
+        }
+    </script>
+    <div id="div1"></div>
+</body>
+</html>
+<!--    
+    Date对象
+        日期对象用于处理日期和时间
+    获得当日的日期
+    常用方法
+        getFullYear() 获取年份
+        getTime()   获取毫秒 时间戳
+        setFullYear()   设置具体的日期
+        getDay()    获取星期
+-->

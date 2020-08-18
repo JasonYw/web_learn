@@ -1,0 +1,13 @@
+ul li{
+    list-style-type: circle;
+}
+#ul1{
+    list-style-image: url("1.jpg");
+}
+ul.ul0{
+    list-style-position: inside;
+}
+ul.ul2{
+    list-style-position: outside;
+
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <title>js 对象</title>
+    </head>
+    <body>
+        <form>
+            <input type="text" id="username">
+        </form>
+        <!-- <button id="butn1" onclick="safe()">btn2</button> -->
+        <button id="btn" onclick="safe()">btn2</button>
+        <title></title>
+        <script>
+            function goceshi() {
+                history.back()
+            }
+            function safe() {
+                var name= document.getElementById("username").value
+                if(name =="hello"){
+                    history.go(-1)
+                }else{
+                    alert("输入错误")
+                }
+            }
+        </script>
+    </body>
+</html>

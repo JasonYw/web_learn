@@ -1,0 +1,55 @@
+*{
+    font-size: 45px;
+    margin: 0px;
+    padding: 0px;
+}
+p{
+    color: blueviolet;
+    background-color: chartreuse;
+    width: fit-content;
+}
+h1,h2{
+    color: coral;
+}
+.c1{
+    color: cornflowerblue;
+}
+a.c1{
+    color: darkkhaki;
+    background-color: darkslateblue;
+}
+.p1{
+    color: deeppink;
+}
+.p2{
+    font-size: 55px;
+}
+.p3{
+    font-style: oblique;
+}
+.p1.p2{
+    font-style: italic;
+}
+#id1{
+    color: rgb(8, 196, 202);
+}
+p strong{
+    color: lemonchiffon;
+    background-color: lightslategrey;
+}
+
+.pz0 strong i{
+    color: lightyellow;
+    font-size: inherit;
+    background-color: maroon;
+}
+.pz>strong{
+    color: mediumorchid;
+    background-color: moccasin;
+    font-size: 10px;
+    font-style: normal;
+}
+li+li{
+    font-size: 50px;
+    color: olivedrab;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <title>js base</title>
+    </head>
+    <body>
+        <p>有一个 i=10 j=10 i+j=?</p>
+        <p id="sumid">
+            <button onclick="mysum()">结果</button>
+        </p>
+        <p id="sumstr">
+            <button onclick="mystr()">结果</button>
+        </p>
+       <script>
+            function mysum(){
+                var i =5;
+                var j =10;
+                // var m = ++i // i++ 与 ++i
+                i+=1
+                document.getElementById("sumid").innerHTML=i;
+            }
+            function mystr(){
+                var j ="2"
+                var i ="hello"
+                document.getElementById("sumstr").innerHTML=i+j
+            }
+       </script>
+       <script>
+           var i =10;
+           var j ="10";
+           document.write(i>10?"i>10":"i<=10");
+       </script>
+    </body>
+</html>
+
+<!--
+    js运算符
+    算术运算符 
+        +-*%/ ++ --
+    赋值运算符
+        = += -= *= /= %=
+    字符串操作
+    比较运算符
+        == "10" 与 10 是相等的 != 同理 
+        === "10" 与 10 是不等的 值与类型都要相同才是对的 !==  同理
+        > < >= <=
+
+    逻辑运算符
+        && || ！
+    条件运算符
+        条件?符合条件输出的值:不符合条件输出的值
+-->

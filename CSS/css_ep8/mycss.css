@@ -1,0 +1,14 @@
+a:link{
+    color: khaki;
+    text-decoration: none;
+    background-color: lightseagreen;
+}
+a:visited{
+    color: lavender;
+}
+a:hover{
+    color: lawngreen;
+}
+a:active{
+    color: lightpink;
+}

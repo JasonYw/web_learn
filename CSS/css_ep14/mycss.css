@@ -1,0 +1,43 @@
+body{
+    margin: 0px;
+}
+td{
+   
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 50px;
+}
+#p1{
+    border-radius: 10px;
+    width: 200px;
+    height: 25px;
+    background-color: hotpink;
+    text-align: center;
+    border: 2px solid blue;
+}
+#div1 p{
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    box-shadow: 10px 10px 5px cadetblue;
+
+}
+.div2 p{
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    margin-top: 100px;
+}
+.div3{
+    margin: 10px;
+}
+.bd{
+    border-style: groove;
+}
+.pd{
+    padding: 10px;
+}
+.content{
+    background-color: cornflowerblue;
+}

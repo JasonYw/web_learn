@@ -1,0 +1,32 @@
+body{
+    color: tan;
+}
+p{
+    color: tomato;
+    text-align: center;
+}
+div #h1{
+    text-indent: 1em;
+}
+div h1{
+    padding-left: 2em;
+}
+#p1{
+    text-transform: capitalize;
+}
+#p2{
+    text-transform: lowercase;
+}
+#p3{
+    text-transform: uppercase;
+}
+#p4{
+    text-transform: capitalize;
+}
+#p5{
+    text-shadow: 5px 5px 4px #9e2626;
+}
+#p6{
+    width: 300px;
+    word-wrap: normal;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="utf-8">
+    <title>js DOM</title>
+    <link rel="stylesheet" href="mystyle.css" type="text/css">
+</head>
+
+<body>
+    <img src="1.jpg" id="imgid" height="100px" width="100px">
+    <br />
+    <a id="aid" href="http://www.baidu.com">hello</a>
+    <br />
+    <p id="pid">hello</p>
+    <button onclick="demo1()">button1</button>
+    <button onclick="demo2()">button2</button>
+    <button onclick="demo3()">button3</button>
+    <button onclick="demo4()">button4</button>
+    <button onclick="demo5()">button5</button>
+    <script>
+        function demo0() {
+            document.write("world"); //不要在页面加载完成之后调用document.write
+        }
+        function demo1() {
+            var nv = document.getElementById("pid")
+            nv.innerHTML = "world"
+        }
+        function demo2() {
+            document.getElementById("pid").innerHTML = "but"
+        }
+        function demo3() {
+            document.getElementsByTagName(p).innerHTML = "www" //只会找到第一个元素
+        }
+        function demo4() {
+            document.getElementById("aid").href = "www.jikexueyuan.com"
+        }
+        function demo5() {
+            document.getElementById("")
+            document.getElementById("imgid").src = "2.jpg"
+        }
+    </script>
+    <button onclick="demo_d1()">button_d1</button>
+    <div id="div1">
+    </div>
+    <script>
+        function demo_d1() {
+            document.getElementById("div1").style.background = "blue"
+        }
+    </script>
+    <p id="pid1">hello</p>
+    <button id="btn">button6</button>
+    <script>
+        //document.getElementById("btn").addEventListener("click", function () { alert("hello") }) //addEventListener
+        //添加句柄，给id为btn的button添加句柄，第一个为事件，点击事件，第二个为方法
+        var x=document.getElementById("btn")
+        x.addEventListener("click",hello)
+        x.addEventListener("click",world)
+        x.removeEventListener("click",hello)
+        x.removeEventListener("click",world)
+        function hello(){
+            alert("hello")
+        }
+        function world(){
+            alert("world")
+        }
+    </script>
+</body>
+
+</html>
+<!-- 
+    html dom
+        当网页被加载时，浏览器会创建页面的文档对象模型（Document Object Model）
+                            Document
+                            html
+            head                                body
+            title                           href a href
+    Dom操作html
+        js能够改变页面中的所有html元素
+        js能够改变页面中所有html属性
+        js能够改变页面中所有css样式
+        js能够对页面中的所有事件作出反应
+    Dom操作html
+        注意：绝对不要在文档加载完成之后使用document.write()。这会覆盖该文档
+    寻找元素
+        通过id找到HTML元素
+        通过标签找到HTML元素
+    改变html内容
+        使用属性 innerHTML
+    该变html属性
+        使用属性 attribute
+    通过dom对象改变css
+        语法：document.getElementById(id).style.property=new style
+    DOM EventListener
+    DOM EventListener:
+        方法: addeventListener(): 添加句柄
+            removeEventListener():  移出句柄
+    addEventListener():
+        方法用于向指定元素添加事件句柄
+
+-->

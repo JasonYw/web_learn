@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <title>section元素</title>
+    </head>
+    <body>
+        <section>
+            <h1>apple</h1>
+            <p>this is fruit</p>
+        </section>
+
+        <article>
+            <h1>apple</h1>
+            <p>this is fruit</p>
+            <section>
+                <h2>big</h2>
+                <p>this is </p>
+            </section>
+            <section>
+                <h2>big</h2>
+                <p>this is</p>
+            </section>
+        </article>
+
+        <section>
+            <h1>hello</h1>
+            <article>
+                <h2>apple</h2>
+            </article>
+            <article>
+                <h2>apple</h2>
+            </article>
+            <article>
+                <h2>apple</h2>
+            </article>
+        </section>
+    </body>
+</html>
+
+
+<!--
+    section元素用于对网站或应用程序中页面上的内容进行分块。一个section元素通常由内容以及其标题组成
+    但是section元素并非一个普通的容器
+    当一个容器需要被直接定义或通过脚本定义行为时，推荐使用div而非section元素
+    在html5 中article可以看成一个特殊类的section
+    section元素强调分块
+    article强调独立性
+    div为容器 与css配套使用
+    若区域块没有标题 请不要使用section元素，section需要一个标题
+-->

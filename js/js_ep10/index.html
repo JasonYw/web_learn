@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="utf-8">
+    <title>js 对象</title>
+</head>
+<body>
+    <!-- 创建对象 -->
+    <script>
+        // people =new Object();
+        // people.name ="iwen"
+        // people.age ="20"
+        // document.write(people.name,people.age)
+        // people ={
+        //     name:"iwen",
+        //     age:"30",
+        // } //people 对象
+        //document.write(people.age)
+        function poeple(name,age) {
+            this._name =name
+            this._age =age
+        }
+        son =new poeple("iwen",30)
+        document.write(son._age,son._name)
+        var str="hello world"
+        document.write("字符串长度为：",str.length)
+        document.write(str.indexOf("w"))
+        document.write(str.match("world"))
+        document.write(str.replace("w","ww"))
+        document.write(str.toLowerCase())
+        var str1 ="he,llo,jikexueyuan"
+        var s =str1.split(",")
+        document.write(s[0],s[1],s[2])
+
+    </script>
+</body>
+</html>
+<!-- 
+    js内置对象
+        string字符串对象
+        Date日期对象
+        Array数组对象
+        Math对象
+    js中所有的东西都是对象
+        每个对象都带有属性和方法
+    js允许自定义对象
+        定义并创建对象实例
+        使用函数定义对象，然后创建新的对象实例
+    string对象
+        string对象用于处理已有的字符串
+        字符串可以使用单引号或双引号
+    在字符串中找字符串：indexOf()
+        若字符串存在，则返回字符串的位置，若不存在则返回-1
+    内容匹配 match()
+        若字符串存在，则直接打印字符串，若不存在则返回空
+    替换内容 replace()
+    字符串大小写转换：toUpperCase() toLowerCase()
+    字符串转换为数组 strong>split()
+    属性 length prototype constructor
+    方法 charAt() charCodeAt() concat() fromCharCode() indexOf()
+        lastIndexOf() match() replace() search() slice() substring()
+        substr() valueOf() toLowerCase() toUpperCase() split()
+        
+-->

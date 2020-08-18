@@ -1,0 +1,17 @@
+body{
+    background-color: slategray;
+    background-image: url("1.jpg");
+    background-attachment: fixed;
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
+p{
+    width: 200px;
+    padding: 10px; 
+    /*background-color: snow;*/
+    /*background-image: url("1.jpg");*/
+}
+a{
+    width: 200px;
+    padding: 10px;
+    /*background-image: url("1.jpg");*/
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="utf-8">
+    <title>js 事件流</title>
+</head>
+<body>
+    <div id="div1">
+        <button id="btn1" onclick="demo()">button1</button>
+    </div>
+    <script>
+        //html级事件的处理
+        //缺点修改一处 同时需要改两处
+        function demo(){
+            alert("hello html事件处理")
+        }
+    </script>
+    <button id="btn2">button2</bututton2>
+    <script>
+        //DOM0级事件处理
+        //缺点容易被覆盖
+        var btn2 =document.getElementById("btn2")
+        btn2.onclick =function(){
+            alert("hello DOM0级事件处理程序1")
+        }
+        btn2.onclick =function(){
+            alert("hello DOM0级事件处理程序2")
+        }
+        //DOM0级事件处理程序1将被2覆盖掉
+        //btn2.onclick =null 直接清楚事件处理程序
+    </script>
+    <button id="btn3">button3</button3>
+    <script>
+        //DOM2级事件处理
+        //使用多
+        document.getElementById("btn3").addEventListener("click",function(){
+            alert("hello DOM2级事件处理程序1")
+        })
+        document.getElementById("btn3").addEventListener("click",function(){
+            alert("hello DOM2级事件处理程序2")
+        })
+        document.getElementById("btn3").addEventListener("click",demo1)
+        function demo1(){
+            alert("hello DOM2级事件处理程序3")
+        }
+        //DOM0级事件处理程序3被移除了
+        document.getElementById("btn3").removeEventListener("click",demo1)
+        //DOM0级事件处理程序1不会被2、3覆盖掉
+    </script>
+    <button id="btn4">buton4</button>
+    <script>
+        var btn4 =document.getElementById("btn4")
+        //兼容性写法
+        if(btn4.addEventListener){
+            btn4.addEventListener("click",demo2)
+        }else if(btn4.attachEvent){
+            btn4.attachEvent("onclick",demo2)
+        }else{
+            btn4.onclick =demo()
+        }
+        function demo2(){
+            alert("hello DOM2级事件处理程序兼容性写法")
+        }
+    </script>
+    <div id="div2">
+        <button id="btn5">buton5</button>
+        <a id="aid" href="http://www.baidu.com">baidu</a>
+        <script>
+            document.getElementById("btn5").addEventListener("click",demo3)
+            document.getElementById("btn5").addEventListener("mouseover",demo4)
+            document.getElementById("div2").addEventListener("click",demo5) //事件的冒泡，事件依次往上传递
+            document.getElementById("aid").addEventListener("click",demo6)
+            function demo3(event){
+                alert(event.type) //获取事件的类型，为click
+                alert(event.target) //获得目标元素
+            }
+            function demo4(event){
+                alert(event.type) //获取事件的类型，为mouseover
+                alert(event.target) //获得目标元素
+                event.stopPropagation() //阻止事件冒泡，也就是demo5方法无效
+            }
+            function demo5(){
+                alert("div") 
+            }
+            function demo6(event){
+                event.stopPropagation()
+                event.preventDefault()
+            }
+        </script>
+    </div>
+</body>
+</html>
+<!-- 
+    事件流
+        描述的是在页面中接受事件的顺序
+    事件冒泡
+        由具体的元素接收，然后逐级向上传播至最不具体的元素节点（文档）
+    事件捕获
+        最不具体的节点先接收事件，而最具体的节点应该是最后接收事件
+    事件的处理
+        直接添加在html结构中
+    DOM0级事件处理
+        把一个函数赋值给一个事件处理程序及属性
+    DOM2级事件处理
+        addEventListener("事件名"，"事件处理函数","布尔值") //目前的浏览器版本布尔值可以被忽略掉
+        true 事件捕获
+        false 事件冒泡
+        removeEventListener()
+    IE事件处理程序 //IE版本小于8,使用方式=DOM2级事件
+        attachEvent //添加一个事件 =addEventListener 参数也一样
+        detachEvent //移出一个事件 =removeEventListener 参数也一样
+    事件对象
+        在触发dom事件的时候都会产生一个对象
+    事件对象event
+        type 获取事件类型
+        target 获取事件目标
+        stopPropagation 阻止事件冒泡
+        preventDefault 阻止事件默认行为
+-->

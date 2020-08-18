@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <title>require & labels</title>
+    </head>
+    <body>
+        <script>
+            function Validate(){
+                var txtName=document.getElementById("txt_name");
+                var button =document.getElementById("btnValidate");
+                var form=document.getElementById("testform");
+                if (txtName.value.trim()==""){
+                    var label =document.createElement("label");
+                    label.setAttribute("for","txt_name");
+                    form.insertBefore(label,button);
+                    txtName.labels[1].innerHTML = "请输入姓名";
+                    txtName.labels[1].setAttribute("style","font-size:9px;color:red");
+                }
+
+            }
+        </script>
+        <form id="testform">
+            <input type="text" required="required">
+            <button type="submit"></button>
+            <br/>
+            <label id="label" for="tet_name">name:</label>
+            <input id="txt_name">
+            <input type="button" id="btnValidate" value="验证" onclick="Validate()">
+        </form>
+    </body>
+</html>
+
+
+<!--
+    required属性可以应用在大多数输入元素上，在提交时，如果元素中内容为空白，则不允许提交
+    同时在游览器中显示信息提示文字
+
+    labels 为所有可使用标签的表单元素 button select元素等定义一个labels属性，属性值为一个nodelist对象
+    代表该元素所绑定的标签元素所构成的集合
+-->

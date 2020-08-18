@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <title>js trycatch</title>
+    </head>
+    <body>
+        <form>
+            <input id ="text" type="text"> 
+            <input id="btn" type="button" onclick="demo1()" value="button">
+        </form>
+        <script>
+            function demo1(){
+                try{
+                    var e=document.getElementById("text").value
+                    if(e==""){
+                        throw "no input"
+                    }
+                }catch(err){
+                    alert(err)
+                }
+            }
+        </script>
+    </body>
+</html>
+<!-- 
+    异常：
+        当js引擎执行js代码时，发生了错误，导致了程序停止运行
+    异常抛出：
+        当异常产生，并且将异常生成错误信息
+    异常捕获
+        try{
+            可能发生异常的代码块
+        }catch(err){
+            当发生错误时执行的代码
+        }
+-->
+
