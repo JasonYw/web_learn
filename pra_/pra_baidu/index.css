@@ -1,11 +1,19 @@
+body{
+    margin: 0;
+    width: 1263;
+    height: 180;
+}
 .header{
     margin: 0px;
-    height: 80px;
+    height: 20px;
     margin-top: 20px;
     margin-left:5px;
     position: relative;
 }
-.left>a{
+a{
+    text-decoration: none;
+}
+.header_left_a{
     margin-left:5px;
     padding-left: 5px;
     padding-right: 10px;
@@ -33,7 +41,7 @@
     font: 13px/23px 'PingFang SC',Arial,'Microsoft YaHei',sans-serif;
 }
 .bodyer{
-    height: 700px;
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -44,26 +52,28 @@
     width: 270px;
     height: 129px;
 }
-.form-search{
-    position: relative;
+
+
+.search-table{
+    text-align: center;
     border: 2px solid #c4c7ce;
-    border-radius: 10px 0 0 10px;
-    width:650px;
+    border-radius: 10px 10px 10px 10px;
+    width:515px;
     height:40px;
     margin-top: 10px;
     margin-right: auto;
     margin-left: auto;
-    text-align: center;
 }
 .search-content{
+    display: inline-block;
     position: absolute;
     padding-left: 15px;
     padding-top:5px;
     display:block;
+    text-align: center;
 }
 .content{
-    position: absolute;
-    width: 540px;
+    width: 350px;
     height: 30px;
     overflow: hidden; 
     outline: 0; 
@@ -72,24 +82,26 @@
     font: 17px/23px 'PingFang SC',Arial,'Microsoft YaHei',sans-serif;
 }
 
-
 .search-btn{
-    position: absolute;
+    display: inline-block;
+    float: right;
+    margin-top: -2px;
+    margin-right: -2px;
     width: 100px;
     height: 44px;
     border: 2px solid #4e6ef2;
     border-radius: 0px 10px 10px 0px ;
     background-color: #4e6ef2;
-    margin-left: 325px;
-    margin-top: -2px;
     padding: 0px;
-    text-align: center;
     color: #fff;
     font-size:17px;
     border:none;
     font-weight: 400
 }
+
 .hot{
+    width: 750px;
+    height: 180px;
     margin-top: 100px;
 }
 .title_left{
@@ -102,17 +114,125 @@
     font:14px/24px 'PingFang SC',Arial,'Microsoft YaHei',sans-serif;
 }
 .title_right{
-    position: absolute;
+    /* position: absolute; */
     float: right;
-    /* padding-left: 400px; */
-    /* display: inline; */
+    /* margin-left: 600px; */
 }
 .icon{
+    padding-top: 4px;
+    display:inline-block;
+    /* text-align: right; */
+    width: 13px;
+    height: 14px;
+}
+.icon_text{
+    padding-left:3px;
+    padding-top: 1px;
+    /* padding-top: 10px; */
     float: right;
-    width: 15px;
-    height: 15px;
+    color: #9195a3;
+    font: 14px/23px 'PingFang SC',Arial,'Microsoft YaHei',sans-serif;
 }
 
+.hotcontent{
+    display: inline-block;
+    width: 100%;
+}
+.content_left{
+    float: left;
+    padding:0px;
+    text-align: left;
+}
+.content_right{
+    float: right;
+    padding:0px;
+    text-align: left;
+}
+ol,li{
+    padding: 0;
+    list-style: none;
+    font:14px/24px 'PingFang SC',Arial,'Microsoft YaHei',sans-serif;
+}
+.index_1{
+    background-image: url(/pra_/pra_baidu/top_1@1x-d1e660cf3b.png);
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: 100% 100%;
+    text-align: center;
+    margin-right: 8px;
+    color:white;
+
+}
+.index_2{
+    background-image: url(/pra_/pra_baidu/top_2@1x-50e9c7fdf4.png);
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: 100% 100%;
+    text-align: center;
+    margin-right: 8px;
+    color:white;
+}
+.index_3{
+    background-image:url(/pra_/pra_baidu/top_3@1x-676616abe1.png);
+    display:inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: 100% 100%;
+    text-align: center;
+    margin-right: 8px;
+    color:white;
+}
+.index_{
+    background-image:url(/pra_/pra_baidu/top_4@1x-8cffd4622f.png);
+    display: inline-block;
+    width: 20px;
+    height:20px;
+    background-size: 100% 100%;
+    text-align: center;
+    margin-right: 8px;
+    color:#9195a3;
+}
+.hotimg{
+    /* display: inline-block; */
+    padding-left:3px;
+    margin-bottom: -2px;
+    height: 16px;
+    width: 16px;
+}
+.scar_img{
+    display: block;
+    float: left;
+    width: 50px;
+    height: 50px;
+    bottom:0px;
+    padding-left:1230px;
+    margin-top:150px
+}
+.scarimg{
+    width: 24px;
+    height: 24px;
+}
 .footer{
-    margin: 7000px;
+    display: block;
+}
+.footer-left{
+    margin-top: 10px;
+    float: left;
+    bottom: 0px;
+    font: 12px/24px "PingFang SC",Arial,"Microsoft YaHei",sans-serif;
+    padding-left: 10px;
+}
+.footer-right{
+    margin-top: 10px;
+    box-sizing: border-box;
+    float: right;
+    bottom: 0px;
+    font: 12px/24px "PingFang SC",Arial,"Microsoft YaHei",sans-serif;
+    padding-right: 20px;
+}
+.footer-content{
+    padding-left: 20px;
+    color:#9195a3;
 }
