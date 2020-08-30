@@ -18,6 +18,7 @@ function over(){
 function manue_leave(obj){
     obj.style.color ="black";
 }
+
 function manue_over(obj){
     obj.style.color ="blue";
 }
@@ -32,3 +33,23 @@ function border_over(obj){
     obj.src ="qrcode-hover@2x-f9b106a848.png"
 }
 
+function content_focus(){
+    var a =document.getElementById("search-table");
+    a.style.borderColor="blue";
+    var b=document.getElementById("searchimg")
+    b.src="/pra_/pra_baidu/nicon-10750f3f7d1.png"
+}
+
+function content_blur(){
+    var a =document.getElementById("search-table");
+    a.style.borderColor="#c4c7ce";
+    var b=document.getElementById("searchimg")
+    b.src="/pra_/pra_baidu/nicon-10750f3f7d2.png"
+}
+
+function footer_on(obj){
+    obj.style.color="black";
+}
+function footer_out(obj){
+    obj.style.color="#9195a3";
+}

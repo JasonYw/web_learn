@@ -73,6 +73,7 @@ a{
     height: 400px;
     margin-left: auto;
     margin-right: auto;
+    margin-top:100px;
 }
 .logoimg_div{
     text-align: center;
@@ -112,6 +113,13 @@ a{
     box-shadow: none;
     border: none;
     font: 17px/23px 'PingFang SC',Arial,'Microsoft YaHei',sans-serif;
+}
+
+.searchimg{
+
+    float: right;
+    padding-top: 6px;
+    padding-right: 15px ;
 }
 
 .search-btn{
@@ -196,6 +204,9 @@ ol,li{
     list-style: none;
     font:14px/24px 'PingFang SC',Arial,'Microsoft YaHei',sans-serif;
 }
+li>a{
+    color: #333333;
+}
 .index_1{
     background-image: url(/pra_/pra_baidu/top_1@1x-d1e660cf3b.png);
     display: inline-block;
@@ -273,6 +284,7 @@ ol,li{
 }
 
 .scar_border{
+    display: none;
     position: relative;
     float: left;
     width: 250px;
