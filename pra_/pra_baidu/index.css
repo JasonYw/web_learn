@@ -41,7 +41,7 @@ a{
     margin-top:10px;
 }
 .manue{
-    display: table-cell;
+    display: none;
     vertical-align: middle;
     border-radius: 10px 10px 10px 10px ;
     border:1px solid #fff;
@@ -244,17 +244,84 @@ ol,li{
     height: 16px;
     width: 16px;
 }
+
+
 .scar_img{
     position: fixed;
-    width: 50px;
-    height: 30px;
-    right: 30px;
+    display: inline-block;
+    width: 17%;
+    height: 150px;
     bottom: 80px;
+    padding-left: 83%;
 }
+
+.scarimg-border{
+    display: inline-block;
+    float: right;
+    width: 44px;
+    margin-right: 20px;
+    margin-top: 75px ;
+}
+
 .scarimg{
+    border-radius: 50%;
+    float: right;
+    bottom: 20px;
     width: 24px;
     height: 24px;
+    right: 30px; 
 }
+
+.scar_border{
+    position: relative;
+    float: left;
+    width: 250px;
+    height: 100px;
+    border:1px solid #fff;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.15);
+}
+.ewm{
+    float: right;
+    width: 57px;
+    height: 57px;
+    padding-right: 15px;
+    padding-top: 12px;
+}
+
+.up-scar_border{
+    padding-top:10px;
+    padding-left: 10px;
+    height: 20px;
+    width: 160px;
+}
+.bigp{
+    display: inline-block;
+    font-size: 18px;
+    color: #333333;
+}
+.saoyisao-border{
+    float: left;
+    left: 0px;
+    width: 18px;
+    height: 18px;
+}
+.saoyisao{   
+    padding-right: 3px;
+    padding-top: 4px;
+    width: 17px;
+    height: 17px;
+}
+
+.smallp{
+    float: left;
+    padding-left: 10px;
+    font-size:14px;
+    color:#9195a3;
+}
+
+
+
 .footer{
     display: inline-block;
     width: 100%;

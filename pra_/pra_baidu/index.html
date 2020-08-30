@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>百度一下，你就知道</title>
         <link type="text/css" rel="stylesheet" href="/pra_/pra_baidu/index.css">
+        <script src="/pra_/pra_baidu/index.js"></script>
     </head>
     <body>
 
@@ -19,15 +20,15 @@
                 <a class="header_left_a" href="http://www.baidu.com/more/" target="_blank">更多</a>
             </div>
             <div class="right">
-                <div class="setting">
-                    <span class="setting-text">设置</span>
+                <div class="setting" onmouseover="over();" onmouseout="leave();">
+                    <span class="setting-text" id="setting-text" >设置</span>
                     <div class="manue-f">
-                        <div class="manue">
-                            <a class="manue-a" href="https://www.baidu.com">搜索设置</a>
-                            <a class="manue-a" href="https://www.baidu.com">高级搜索</a>
-                            <a class="manue-a" href="https://www.baidu.com">关闭预测</a>
-                            <a class="manue-a" href="https://www.baidu.com">隐私设置</a>
-                            <a class="manue-a" href="https://www.baidu.com">关闭热榜</a>
+                        <div class="manue" id="manue-id" >
+                            <a class="manue-a" href="https://www.baidu.com"  onmouseover="manue_over(this);" onmouseout="manue_leave(this);">搜索设置</a>
+                            <a class="manue-a" href="https://www.baidu.com"  onmouseover="manue_over(this);" onmouseout="manue_leave(this);">高级搜索</a>
+                            <a class="manue-a" href="https://www.baidu.com"  onmouseover="manue_over(this);" onmouseout="manue_leave(this);" >关闭预测</a>
+                            <a class="manue-a" href="https://www.baidu.com"  onmouseover="manue_over(this);" onmouseout="manue_leave(this);">隐私设置</a>
+                            <a class="manue-a" href="https://www.baidu.com"  onmouseover="manue_over(this);" onmouseout="manue_leave(this);">关闭热榜</a>
                         </div>
                     </div>
                 </div>
@@ -61,21 +62,21 @@
                     </div>
                     <div class="title_right">
                         <img src="/pra_/pra_baidu/refresh.png" class="icon">
-                        <span class="icon_text">换一换</span>
+                        <span class="icon_text" onmouseover="manue_over(this);" onmouseout="manue_leave(this);">换一换</span>
                     </div>
                     <div class="hotcontent">
                         <div class="content_left">
                             <ol>
-                                <li><a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97%E5%8F%AA%E8%83%BD%E4%BB%A5%E6%88%90%E6%9C%AC%E4%BD%9C%E4%B8%BA%E5%AE%9A%E4%BB%B7%E4%BE%9D%E6%8D%AE&rsv_idx=2&rsv_dl=fyb_n_homepage&hisfilter=1" target="_blank"><span class="index_1">1</span>新冠疫苗只能以成本作为定价依据<img class="hotimg" src="mark-icon-3@1x-fdb050afea.png"></a></li>
-                                <li><a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A8%E5%B0%86%E6%AD%A3%E5%BC%8F%E8%B5%B7%E8%AF%89%E7%89%B9%E6%9C%97%E6%99%AE%E6%94%BF%E5%BA%9C&rsv_idx=2&rsv_dl=fyb_n_homepage&hisfilter=1" target="_blank"><span span class="index_2">2</span>字节跳动将正式起诉特朗普总统</a></li>
-                                <li><a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E5%91%A8%E6%9D%B0%E4%BC%A6%E6%99%9220%E5%B9%B4%E5%89%8D%E6%97%A7%E7%85%A7&rsv_idx=2&rsv_dl=fyb_n_homepage&hisfilter=1" target="_blank"><span class="index_3">3</span>周杰伦晒20年前旧照</a></li>
+                                <li><a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97%E5%8F%AA%E8%83%BD%E4%BB%A5%E6%88%90%E6%9C%AC%E4%BD%9C%E4%B8%BA%E5%AE%9A%E4%BB%B7%E4%BE%9D%E6%8D%AE&rsv_idx=2&rsv_dl=fyb_n_homepage&hisfilter=1" target="_blank"  onmouseover="manue_over(this);" onmouseout="manue_leave(this);"><span class="index_1">1</span>新冠疫苗只能以成本作为定价依据<img class="hotimg" src="mark-icon-3@1x-fdb050afea.png"></a></li>
+                                <li><a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A8%E5%B0%86%E6%AD%A3%E5%BC%8F%E8%B5%B7%E8%AF%89%E7%89%B9%E6%9C%97%E6%99%AE%E6%94%BF%E5%BA%9C&rsv_idx=2&rsv_dl=fyb_n_homepage&hisfilter=1" target="_blank" onmouseover="manue_over(this);" onmouseout="manue_leave(this);"><span span class="index_2">2</span>字节跳动将正式起诉特朗普总统</a></li>
+                                <li><a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E5%91%A8%E6%9D%B0%E4%BC%A6%E6%99%9220%E5%B9%B4%E5%89%8D%E6%97%A7%E7%85%A7&rsv_idx=2&rsv_dl=fyb_n_homepage&hisfilter=1" target="_blank" onmouseover="manue_over(this);" onmouseout="manue_leave(this);"><span class="index_3">3</span>周杰伦晒20年前旧照</a></li>
                             </ol>
                         </div>
                         <div class="content_right">
                             <ol start="4">
-                                <li><a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E5%87%86%E7%A0%94%E7%A9%B6%E7%94%9F%E8%99%90%E7%8B%97%E4%BA%8B%E4%BB%B6%E7%8B%97%E4%B8%BB%E4%BA%BA%E5%8F%91%E5%A3%B0&rsv_idx=2&rsv_dl=fyb_n_homepage&hisfilter=1" target="_blank"><span span class="index_">4</span>准研究生虐狗事件狗主人发声<img class="hotimg" src="mark-icon-1@1x-c1226bc3ad.png"></a></li>
-                                <li><a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E9%A6%99%E6%B8%AF%E5%AF%BC%E6%BC%94%E9%99%88%E6%9C%A8%E8%83%9C%E5%8E%BB%E4%B8%96&rsv_idx=2&rsv_dl=fyb_n_homepage&hisfilter=1" target="_blank"><span class="index_">5</span>香港导演陈木胜去世</a></li>
-                                <li><a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E5%85%AC%E5%8A%A1%E5%91%98%E8%80%83%E8%AF%95%E8%80%83%E5%9C%BA%E5%A4%96%E5%8F%B0%E9%98%B6%E5%A0%86%E6%BB%A1%E5%9E%83%E5%9C%BE&rsv_idx=2&rsv_dl=fyb_n_homepage&hisfilter=1" target="_blank"><span class="index_">6</span>公务员考试场外台阶堆满垃圾</a></li>
+                                <li><a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E5%87%86%E7%A0%94%E7%A9%B6%E7%94%9F%E8%99%90%E7%8B%97%E4%BA%8B%E4%BB%B6%E7%8B%97%E4%B8%BB%E4%BA%BA%E5%8F%91%E5%A3%B0&rsv_idx=2&rsv_dl=fyb_n_homepage&hisfilter=1" target="_blank" onmouseover="manue_over(this);" onmouseout="manue_leave(this);"><span span class="index_">4</span>准研究生虐狗事件狗主人发声<img class="hotimg" src="mark-icon-1@1x-c1226bc3ad.png"></a></li>
+                                <li><a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E9%A6%99%E6%B8%AF%E5%AF%BC%E6%BC%94%E9%99%88%E6%9C%A8%E8%83%9C%E5%8E%BB%E4%B8%96&rsv_idx=2&rsv_dl=fyb_n_homepage&hisfilter=1" target="_blank" onmouseover="manue_over(this);" onmouseout="manue_leave(this);"><span class="index_">5</span>香港导演陈木胜去世</a></li>
+                                <li><a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E5%85%AC%E5%8A%A1%E5%91%98%E8%80%83%E8%AF%95%E8%80%83%E5%9C%BA%E5%A4%96%E5%8F%B0%E9%98%B6%E5%A0%86%E6%BB%A1%E5%9E%83%E5%9C%BE&rsv_idx=2&rsv_dl=fyb_n_homepage&hisfilter=1" target="_blank" onmouseover="manue_over(this);" onmouseout="manue_leave(this);"><span class="index_">6</span>公务员考试场外台阶堆满垃圾</a></li>
                             </ol>
                         </div>
                     </div>
@@ -83,7 +84,21 @@
             </div>
         </div>
         <div class="scar_img">
-            <img class="scarimg" src="qrcode-hover@2x-f9b106a848.png">
+            <div class="scarimg-border">
+                <img class="scarimg" src="qrcode@2x-daf987ad02.png" onmouseover="border_over(this);" onmouseout="border_out(this);">
+            </div>
+            <div class="scar_border" id="border">
+                <img src="/pra_/pra_baidu/qrcode.png" class="ewm">
+                <div class="up-scar_border">
+                    <div class="bigp">
+                        <div class="saoyisao-border">
+                            <img src="/pra_/pra_baidu/扫码.png" class="saoyisao">
+                        </div>
+                        百度app扫码登录
+                    </div>
+                </div>
+                <p class="smallp">有事搜一搜&nbsp;没事看一看</p>
+            </div>
         </div>
 
 
